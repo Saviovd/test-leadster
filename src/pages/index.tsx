@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import GlobalStyle from '@/styles/globals';
 import Header from '@/components/Header/Header';
+import Call from '@/components/Call/Call';
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
          </Head>
          <main>
             <Header />
+            <Call />
          </main>
       </>
    )
