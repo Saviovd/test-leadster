@@ -15,15 +15,15 @@ export const ButtonStyle = styled.li`
       cursor: pointer;
 
       &:hover {
-         color: #4f7bf6;
-         border: 1px solid #4f7bf6;
+         color: #007EFF;
+         border: 1px solid #007EFF;
       }
    }
 
    .isActive {
-      background-color: #4f7bf6;
+      background-color: #007EFF;
       color: #fff;
-      border: 1px solid #4f7bf6;
+      border: 1px solid #007EFF;
 
       &:hover {
          color: #fff;

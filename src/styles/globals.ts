@@ -15,6 +15,18 @@ const GlobalStyle = createGlobalStyle`
          overflow-x: hidden;
          max-width: 100vw;
          overflow-x: hidden;
+
+         a {
+            text-decoration: none;
+            color: inherit;
+         }
+
+         ul {
+            padding: 0;
+         }
+         li {
+            list-style-type: none;
+         }
       }
    }
 `;
