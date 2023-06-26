@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
          overflow-x: hidden;
          max-width: 100vw;
          overflow-x: hidden;
-         color: red;
+         font-family: 'Plus Jakarta Sans', sans-serif;
       }
    }
 `;
