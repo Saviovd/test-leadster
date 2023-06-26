@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
 
    html {
       font-size: 10px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
 
       body {
          min-height: 100vh;
@@ -14,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
          overflow-x: hidden;
          max-width: 100vw;
          overflow-x: hidden;
-         font-family: 'Plus Jakarta Sans', sans-serif;
       }
    }
 `;

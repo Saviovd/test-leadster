@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const CallStyle = styled.section`
-   font-family: 'Plus Jakarta Sans', sans-serif;
    display: flex;
    flex-direction: column;
    align-items: center;

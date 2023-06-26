@@ -2,6 +2,7 @@ import Head from 'next/head';
 import GlobalStyle from '@/styles/globals';
 import Header from '@/components/Header/Header';
 import Call from '@/components/Call/Call';
+import NavBar from '@/components/NavBar/NavBar';
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
          <main>
             <Header />
             <Call />
+            <NavBar />
          </main>
       </>
    )
