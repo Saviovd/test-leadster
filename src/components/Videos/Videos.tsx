@@ -7,21 +7,24 @@ import VideoCard from '../VideoCard/VideoCard';
 const { videos } = data;
 
 const Videos = () => {
-
    return (
-      <VideosStyles>
-         <NavBar />
-         <div className='video__card--list'>
-            {videos.map((video, i) => (
-               <VideoCard
-                  key={i}
-                  thumb={video.thumb}
-                  title={video.title}
-                  url={video.url}
-               />
-            ))}
-         </div>
-      </VideosStyles>
+      <>
+         <VideosStyles>
+            <NavBar />
+            <div className='video__card--list'>
+               {videos.map((video, i) => (
+                  <>
+                     <VideoCard
+                        key={i}
+                        thumb={video.thumb}
+                        title={video.title}
+                        url={video.url}
+                     />
+                  </>
+               ))}
+            </div>
+         </VideosStyles>
+      </>
    );
 };
 
