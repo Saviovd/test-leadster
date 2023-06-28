@@ -15,15 +15,34 @@ export const ButtonStyle = styled.li`
       cursor: pointer;
 
       &:hover {
-         color: #007EFF;
-         border: 1px solid #007EFF;
+         color: #007eff;
+         border: 1px solid #007eff;
+      }
+
+      @media screen {
+         @media (max-width: 1230px) {
+            font-size: 1.5rem;
+         }
+         @media (max-width: 1090px) {
+            font-size: 1.4rem;
+            margin: 0 0.3rem;
+         }
+         @media (max-width: 970px) {
+            font-size: 1.3rem;
+            padding: 0.7rem 1.6rem;
+         }
+         @media (max-width: 610px) {
+            font-size: 1.2rem;
+            padding: 0.7rem 1.4rem;
+            margin: .5rem 0.3rem;
+         }
       }
    }
 
    .isActive {
-      background-color: #007EFF;
+      background-color: #007eff;
       color: #fff;
-      border: 1px solid #007EFF;
+      border: 1px solid #007eff;
 
       &:hover {
          color: #fff;

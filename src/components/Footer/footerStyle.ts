@@ -90,7 +90,7 @@ export const FooterStyle = styled.footer`
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      border-top: 1px solid #e9ecf3;
       color: #7f88a6;
 
       .copy {
