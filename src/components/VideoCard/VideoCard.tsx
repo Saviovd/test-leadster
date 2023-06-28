@@ -33,7 +33,7 @@ const VideoCard = ({ key, thumb, title, url }: ICardProps) => {
                src={thumb}
                alt='Video thumbnail'
                width={280}
-               height={180}
+               height={160}
             />
             <h3 className='video__card--title'>{title}</h3>
          </VideoCardStyles>

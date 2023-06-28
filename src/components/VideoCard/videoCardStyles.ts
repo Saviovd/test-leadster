@@ -11,6 +11,14 @@ export const VideoCardStyles = styled.div`
       width: 100%;
       object-fit: 100% 100%;
       border-radius: 2rem 2rem 0 0;
+
+      @media screen {
+         @media (max-width: 470px) {
+            object-fit: contain;
+            height: auto;
+            width: 100%;
+         }
+      }
    }
 
    .video__card--title {
@@ -20,6 +28,36 @@ export const VideoCardStyles = styled.div`
       padding: 2rem 0 2rem 3rem;
       white-space: pre-wrap;
       font-weight: 600;
+
+      @media screen {
+         @media (max-width: 1140px) {
+            font-size: 1.6rem;
+         }
+         @media (max-width: 990px) {
+            font-size: 1.5rem;
+         }
+         @media (max-width: 880px) {
+            padding: 1rem 0 1rem 1.5rem;
+            width: 90%;
+         }
+         @media (max-width: 780px) {
+            font-size: 1.4rem;
+         }
+         @media (max-width: 730px) {
+            width: 80%;
+         }
+         @media (max-width: 550px) {
+            font-size: 1.3rem;
+            width: 90%;
+         }
+         @media (max-width: 550px) {
+            font-size: 1.1rem;
+         }
+         @media (max-width: 380px) {
+            padding-left: 0.5rem;
+            width: 100%;
+         }
+      }
    }
 
    &:hover {
@@ -37,6 +75,30 @@ export const VideoCardStyles = styled.div`
          align-items: center;
          justify-content: center;
          border-radius: 2rem 2rem 0 0;
+      }
+   }
+
+   @media screen {
+      @media (max-width: 1140px) {
+         width: 28%;
+      }
+      @media (max-width: 990px) {
+         width: 29%;
+      }
+      @media (max-width: 930px) {
+         width: 30%;
+      }
+      @media (max-width: 730px) {
+         width: 40%;
+      }
+      @media (max-width: 620px) {
+         width: 44%;
+      }
+      @media (max-width: 470px) {
+         width: 18rem;
+      }
+      @media (max-width: 380px) {
+         width: 16rem;
       }
    }
 `;

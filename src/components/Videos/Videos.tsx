@@ -6,14 +6,28 @@ import VideoCard from '../VideoCard/VideoCard';
 import Pagination from '../Pagination/Pagination';
 
 const { videos } = data;
-const videosPerPage = 9;
+// const videosPerPage = 9
+
 
 const Videos = () => {
-   const [page, setPage] = useState(1);
 
+   const [page, setPage] = useState(1);
+   const [videosPerPage, set] = React.useState(9)
    const indexOfLastVideo = page * videosPerPage;
    const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
    const currentVideos = videos.slice(indexOfFirstVideo, indexOfLastVideo);
+
+   React.useEffect(() => {
+      handlevideosPerPage()
+   }, [])
+
+   function handlevideosPerPage() {
+      if (typeof window !== 'undefined' && window.innerWidth > 730) {
+         set(9)
+      } else {
+         set(6)
+      }
+   }
 
    const paginate = (pageNumber: React.SetStateAction<number>) => {
       setPage(pageNumber);
