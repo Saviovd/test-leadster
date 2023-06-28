@@ -4,6 +4,7 @@ export const PaginationStyles = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-bottom: 3rem;
 
    .page {
       font-size: 2rem;

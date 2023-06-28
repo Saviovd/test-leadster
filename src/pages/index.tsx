@@ -3,6 +3,7 @@ import GlobalStyle from '@/styles/globals';
 import Header from '@/components/Header/Header';
 import Call from '@/components/Call/Call';
 import Videos from '@/components/Videos/Videos';
+import Demo from '@/components/Demo/Demo';
 
 export default function Home() {
    return (
@@ -21,6 +22,7 @@ export default function Home() {
          <main>
             <Call />
             <Videos />
+            <Demo />
          </main>
       </>
    );
