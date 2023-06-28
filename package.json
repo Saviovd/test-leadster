@@ -7,8 +7,7 @@
       "build": "next build",
       "start": "next start",
       "lint": "next lint",
-      "lint:fix": "npm run lint -- --fix",
-      "cypress": "cypress open"
+      "lint:fix": "npm run lint -- --fix"
    },
    "dependencies": {
       "@types/node": "20.3.1",
