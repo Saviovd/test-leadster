@@ -48,7 +48,7 @@ const Demo = () => {
                   <Image
                      src={'/assets/rating.webp'}
                      alt='Five stars'
-                     width={100}
+                     width={80}
                      height={15}
                      className='rating__icon'
                   />
