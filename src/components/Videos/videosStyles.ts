@@ -6,7 +6,7 @@ export const VideosStyles = styled.div`
    margin: 0 auto 2rem;
    padding: 2rem 0 5rem;
    border-bottom: 0.1px solid #c8d4dd;
-   min-height: 88rem;
+   min-height: 82rem;
 
    .video__card--list {
       display: flex;
