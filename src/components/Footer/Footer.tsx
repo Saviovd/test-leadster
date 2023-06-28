@@ -20,28 +20,23 @@ const Footer = () => {
             <p className='slogan'>Transformando visitantes em clientes.</p>
          </div>
          <div className='container'>
-            {lists.map((list, i) => (
-               <>
-                  <div key={`${i}_${list['list-title']}`} className='content'>
-                     <h2 className='title'>{list['list-title']}</h2>
-                     <ul className='nav__list'>
-                        {list['nav-list'].map((navItem, i) => (
-                           <>
-                              <li
-                                 key={`${i}_${navItem['item-name']}`}
-                                 className='nav__list--item'
-                              >
-                                 <Link className='nav__list--link' href={'#'}>
-                                    {navItem['item-name']}
-                                 </Link>
-                              </li>
-                           </>
-                        ))}
-                     </ul>
-                  </div>
-               </>
+            {lists.map((list, index) => (
+               <div key={`${list['list-title']}_${index}`} className='content'>
+                  <h2 className='title'>{list['list-title']}</h2>
+                  <ul className='nav__list'>
+                     {list['nav-list'].map((navItem, i) => (
+                        <li
+                           key={`${navItem['item-name']}_${i}`}
+                           className='nav__list--item'
+                        >
+                           <Link className='nav__list--link' href={'#'}>
+                              {navItem['item-name']}
+                           </Link>
+                        </li>
+                     ))}
+                  </ul>
+               </div>
             ))}
-
             <div className='follow_us'>
                <h2 className='follow_us--title'>Siga a Leadster</h2>
                <div className='social__medias'>
@@ -65,10 +60,14 @@ const Footer = () => {
          </div>
          <div className='footer__bottom'>
             <p className='copy'>
-               Copyright &copy; 2015 - 2023 Todos os direitos reservados | <span className='business'>Leadster</span>
+               Copyright &copy; 2015 - 2023 Todos os direitos reservados |{' '}
+               <span className='business'>Leadster</span>
             </p>
             <p className='adress'>
-               Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 | <Link className='adress__link' href={'#'}>Termos de uso</Link>
+               Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 |{' '}
+               <Link className='adress__link' href={'#'}>
+                  Termos de uso
+               </Link>
             </p>
          </div>
       </FooterStyle>

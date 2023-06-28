@@ -10,10 +10,9 @@ interface ICardProps {
    thumb: string;
    title: string;
    url: string;
-   key: number;
 }
 
-const VideoCard = ({ key, thumb, title, url }: ICardProps) => {
+const VideoCard = ({ thumb, title, url }: ICardProps) => {
    const [isModalOpen, setIsModalOpen] = React.useState(false);
 
    function openModal(title: string) {
@@ -27,7 +26,7 @@ const VideoCard = ({ key, thumb, title, url }: ICardProps) => {
 
    return (
       <>
-         <VideoCardStyles onClick={() => openModal(title)} key={key}>
+         <VideoCardStyles onClick={() => openModal(title)}>
             <Image
                className='video__card--thumbnail'
                src={thumb}

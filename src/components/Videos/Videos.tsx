@@ -40,7 +40,7 @@ const Videos = () => {
             <div className='video__card--list'>
                {currentVideos.map((video, i) => (
                   <VideoCard
-                     key={i}
+                     key={`${video.title}_${i}`}
                      thumb={video.thumb}
                      title={video.title}
                      url={video.url}

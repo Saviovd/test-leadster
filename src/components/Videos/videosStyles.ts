@@ -11,12 +11,21 @@ export const VideosStyles = styled.div`
    .video__card--list {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
-      gap: 2.5rem;
+      gap: 4rem;
+      padding: 0 4rem;
       @media screen {
          @media (max-width: 930px) {
-            gap: 2rem 0;
+            gap: 3rem 0;
+            padding: 0 3rem;
+         }
+         @media (max-width: 575px) {
+            gap: 1rem;
+            padding: 0 2rem;
+         }
+         @media (max-width: 470px) {
+            padding: 0 1rem;
             justify-content: space-evenly;
          }
       }

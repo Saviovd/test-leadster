@@ -37,7 +37,7 @@ export const VideoCardStyles = styled.div`
             font-size: 1.5rem;
          }
          @media (max-width: 880px) {
-            padding: 1rem 0 1rem 1.5rem;
+            padding: 1.5rem 0 1.5rem 1.5rem;
             width: 90%;
          }
          @media (max-width: 780px) {
@@ -89,16 +89,16 @@ export const VideoCardStyles = styled.div`
          width: 30%;
       }
       @media (max-width: 730px) {
-         width: 40%;
+         width: 47%;
       }
-      @media (max-width: 620px) {
+      /* @media (max-width: 620px) {
          width: 44%;
-      }
+      } */
       @media (max-width: 470px) {
-         width: 18rem;
-      }
-      @media (max-width: 380px) {
          width: 16rem;
+      }
+      @media (max-width: 360px) {
+         width: 14rem;
       }
    }
 `;
