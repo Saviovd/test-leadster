@@ -1,0 +1,67 @@
+{
+   "lists": [
+      {
+         "list-title": "Links Principais",
+         "nav-list": [
+            {
+               "item-name": "Home",
+               "url": "#"
+            },
+            {
+               "item-name": "Ferramenta",
+               "url": "#"
+            },
+            {
+               "item-name": "Preços",
+               "url": "#"
+            },
+            {
+               "item-name": "Contato",
+               "url": "#"
+            }
+         ]
+      },
+      {
+         "list-title": "Cases",
+         "nav-list": [
+            {
+               "item-name": "Geração de Leads B2B",
+               "url": "#"
+            },
+            {
+               "item-name": "Geração de Leads em Software",
+               "url": "#"
+            },
+            {
+               "item-name": "Geração de Leads Imobiliária",
+               "url": "#"
+            },
+            {
+               "item-name": "Cases de sucesso",
+               "url": "#"
+            }
+         ]
+      },
+      {
+         "list-title": "Materiais",
+         "nav-list": [
+            {
+               "item-name": "Blog",
+               "url": "#"
+            },
+            {
+               "item-name": "Parceria com Agências",
+               "url": "#"
+            },
+            {
+               "item-name": "Guia Definitivo do Marketing",
+               "url": "#"
+            },
+            {
+               "item-name": "Materiais Exclusivos",
+               "url": "#"
+            }
+         ]
+      }
+   ]
+}

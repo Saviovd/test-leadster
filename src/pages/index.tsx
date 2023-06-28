@@ -4,6 +4,7 @@ import Header from '@/components/Header/Header';
 import Call from '@/components/Call/Call';
 import Videos from '@/components/Videos/Videos';
 import Demo from '@/components/Demo/Demo';
+import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
    return (
@@ -24,6 +25,7 @@ export default function Home() {
             <Videos />
             <Demo />
          </main>
+         <Footer />
       </>
    );
 }
