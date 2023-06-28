@@ -3,7 +3,7 @@ import { VideosStyles } from './videosStyles';
 import data from '@/data/videos.json';
 import React, { useState } from 'react';
 import VideoCard from '../VideoCard/VideoCard';
-import { PaginationStyles } from '../Pagination/paginationStyles';
+import Pagination from '../Pagination/Pagination';
 
 const { videos } = data;
 const videosPerPage = 9;
@@ -34,20 +34,11 @@ const Videos = () => {
                ))}
             </div>
          </VideosStyles>
-         <PaginationStyles>
-            <p className='page'>Página</p>
-            {Array.from({
-               length: Math.ceil(videos.length / videosPerPage),
-            }).map((_, i) => (
-               <p
-                  className={`page__number ${page === i + 1 ? 'isActive' : ''}`}
-                  key={i}
-                  onClick={() => paginate(i + 1)}
-               >
-                  {i + 1}
-               </p>
-            ))}
-         </PaginationStyles>
+         <Pagination
+            page={page}
+            paginate={paginate}
+            videosPerPage={videosPerPage}
+         />
       </>
    );
 };

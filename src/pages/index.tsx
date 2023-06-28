@@ -4,7 +4,6 @@ import Header from '@/components/Header/Header';
 import Call from '@/components/Call/Call';
 import Videos from '@/components/Videos/Videos';
 
-
 export default function Home() {
    return (
       <>
@@ -18,11 +17,11 @@ export default function Home() {
             />
             <link rel='icon' href='/favicon.ico' />
          </Head>
+         <Header />
          <main>
-            <Header />
             <Call />
             <Videos />
          </main>
       </>
-   )
+   );
 }

@@ -12,14 +12,15 @@ export const PaginationStyles = styled.div`
    .page__number {
       font-size: 2rem;
       cursor: pointer;
-      margin: 0 2rem;
       align-self: center;
+      border: 1px solid inherit;
+      padding: 1rem 1.5rem;
+      margin: 0 1rem;
    }
 
    .isActive {
       color: #007EFF;
       border: 1px solid #007EFF;
-      padding: 1rem 1.5rem;
       border-radius: 1rem;
       font-weight: 700;
    }
