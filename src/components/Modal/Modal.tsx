@@ -19,8 +19,7 @@ const Modal = ({openModal, title, url}: IModalProps) => {
                {title}
             </h2>
             <iframe
-               width='550'
-               height='250'
+               className='video_frame'
                src={url}
                frameBorder='0'
                title='YouTube video player'

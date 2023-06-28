@@ -23,7 +23,7 @@ export const ModalStyle = styled.div`
       .close {
          position: absolute;
          right: 1.5rem;
-         top: .3rem;
+         top: 0.3rem;
          content: url('assets/close.png');
          width: 1.7rem;
          cursor: pointer;
@@ -37,6 +37,22 @@ export const ModalStyle = styled.div`
          .title__emphasys {
             color: #007eff;
          }
+         @media screen {
+            @media (max-width: 650px) {
+               width: 60%;
+            }
+            @media (max-width: 530px) {
+               padding: 3.5rem 0 2.5rem;
+               width: 80%;
+            }
+            @media (max-width: 370px) {
+               width: 90%;
+            }
+         }
+      }
+      .video_frame {
+         width: 100%;
+         height: 250px;
       }
       .subtitle {
          width: 95%;
@@ -49,22 +65,35 @@ export const ModalStyle = styled.div`
       }
       .description {
          width: 95%;
-         margin: 1rem auto .4rem;
+         margin: 1rem auto 0.4rem;
          font-size: 1.2rem;
          font-weight: 600;
       }
       .downloads {
          display: flex;
+         flex-wrap: wrap;
          padding-left: 1rem;
       }
+
       &:before {
          content: '';
-         width: 95%;
+         width: 90%;
          height: 5px;
+         left: 5%;
          background-color: #007eff;
          position: absolute;
-         left: 2.5%;
+         margin: 0 auto;
+         top: 0;
          border-radius: 0 0 2rem 2rem;
+      }
+
+      @media screen {
+         @media (max-width: 650px) {
+            width: 80%;
+         }
+         @media (max-width: 460px) {
+            width: 90%;
+         }
       }
    }
 `;
