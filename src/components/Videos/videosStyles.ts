@@ -44,7 +44,7 @@ export const VideosStyles = styled.div`
          padding: 0;
       }
       @media (max-width: 470px) {
-         min-height: 53rem;
+         min-height: 55rem;
       }
       @media (max-width: 380px) {
          min-height: 50rem;

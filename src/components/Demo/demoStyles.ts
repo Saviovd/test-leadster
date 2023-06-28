@@ -113,9 +113,6 @@ export const DemoStyle = styled.section`
                   padding: 1rem 2rem;
                }
                @media (max-width: 490px) {
-                  font-size: 1.4rem;
-               }
-               @media (max-width: 490px) {
                   font-size: 1.3rem;
                   padding: 1rem 1.7rem;
                }
@@ -236,8 +233,11 @@ export const DemoStyle = styled.section`
                   'dont_need dont_need'
                   'rating rating';
                grid-template-columns: 60% 40%;
+               height: 25rem;
+
             }
             @media (max-width: 375px) {
+               height: auto;
                width: 100%;
             }
          }

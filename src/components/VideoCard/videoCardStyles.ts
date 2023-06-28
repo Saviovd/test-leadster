@@ -91,9 +91,6 @@ export const VideoCardStyles = styled.div`
       @media (max-width: 730px) {
          width: 47%;
       }
-      /* @media (max-width: 620px) {
-         width: 44%;
-      } */
       @media (max-width: 470px) {
          width: 16rem;
       }
