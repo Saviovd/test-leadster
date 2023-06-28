@@ -11,7 +11,7 @@ export const DemoStyle = styled.section`
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 4rem 1rem 0;
+      padding: 4rem 1rem 2rem;
       gap: 1rem;
       .comparative {
          object-fit: contain;
@@ -108,7 +108,7 @@ export const DemoStyle = styled.section`
                @media (max-width: 990px) {
                   font-size: 1.7rem;
                }
-               @media (max-width: 560px) {
+               @media (max-width: 570px) {
                   font-size: 1.5rem;
                   padding: 1rem 2rem;
                }
@@ -252,7 +252,7 @@ export const DemoStyle = styled.section`
             flex-direction: column;
          }
          @media (max-width: 375px) {
-            padding: 4rem .5rem 0;
+            padding: 4rem .5rem 2rem;
          }
       }
    }
